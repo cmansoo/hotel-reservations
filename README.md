@@ -1,7 +1,10 @@
 Author: Mansoo Cho
 
+Feel free to test the notebook out!
+
+A few things to watch:
 **Make sure to run all the codes sequentially.
-**It is a working code. However, it may take a long time to run for the following code chunks below. Please consider before running those chunks.
+**Long execution time for the below mentioned code chunks.
 
 
 1. The random forest chunk takes about 30 minutes to run due to grid search like method for hyper parameter tuning.
