@@ -3,8 +3,9 @@ Author: Mansoo Cho
 #### Feel free to test the notebook out!
 
 #### A few things to watch:
-*Make sure to run all the codes sequentially.*
-*Long execution time for the below mentioned code chunks.*
+-*Make sure to run all the codes sequentially.*
+
+-*Long execution time for the below mentioned code chunks.*
 
 
 1. Random forest chunk: uses grid search like method for hyper parameter tuning.
