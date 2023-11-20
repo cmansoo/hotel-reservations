@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import statsmodels.api as sm
 
 def backward_elimination(x: np.ndarray, y: np.ndarray, s: float) -> np.ndarray:
     """
