@@ -5,7 +5,7 @@ This project frames the problem as a **binary classification** task to help hote
 
 **Contributions:**  
 - **Mansoo Cho** — analysis, modeling, and code implementation  
-- **Gillian Kingsbury** — presentation  
+- **Gillian Kingsbury** — modeiling and code implementation
 - **Danayit Shewamene** — report drafting  
 
 ---
@@ -143,3 +143,4 @@ Open hotel.ipynb and run cells sequentially.
 - imbalanced-learn (SMOTE)
 - statsmodels documentation
 - Kaggle dataset: Hotel Reservations Dataset (Classification)
+
