@@ -5,7 +5,7 @@ This project frames the problem as a **binary classification** task to help hote
 
 **Contributions:**  
 - **Mansoo Cho** — analysis, modeling, and code implementation  
-- **Gillian Kingsbury** — modeiling and code implementation
+- **Gillian Kingsbury** — modeling and code implementation  
 - **Danayit Shewamene** — report drafting  
 
 ---
@@ -95,6 +95,23 @@ Implemented using **scikit-learn** (and `statsmodels` for backward elimination):
 
 ---
 
+## Voting Classifier Performance (Precision / Recall / F1)
+
+Below are the `classification_report` results for the Voting Classifier trained on three feature sets.
+
+### All Features (31)
+![Voting Classifier - All Features](img/voting_all_feat.png)
+
+### PCA Features (22)
+![Voting Classifier - PCA](img/voting_pca.png)
+
+### Backward Elimination (19)
+![Voting Classifier - Backward Elimination](img/voting_backward.png)
+
+**Takeaway:** The ensemble performs strongly overall (high weighted F1 / accuracy). Minority-class performance (Canceled) is naturally harder due to class imbalance and overlap in booking behavior.
+
+---
+
 ## Key Insights (Feature Importance)
 Across multiple models, the strongest predictors of cancellation were:
 1) **Lead time** (days between booking and arrival)  
@@ -107,40 +124,5 @@ This supported our hypothesis that lead time and pricing are meaningful indicato
 ## Repository Contents
 - `hotel.ipynb` — end-to-end analysis (preprocessing → modeling → evaluation)
 - `backward_elimination.py` — backward feature elimination helper (statsmodels)
-
-> Note: Dataset files may not be included in this repository. Download the dataset from Kaggle and update the notebook path accordingly.
-
----
-
-## How to Run
-
-### 1) Clone
-```bash
-git clone https://github.com/cmansoo/hotel-reservations.git
-cd hotel-reservations
-```
----
-### 2) Install dependencies
-```
-pip install pandas numpy matplotlib scikit-learn imbalanced-learn statsmodels jupyter
-```
-### 3) Run the notebook
-```
-jupyter notebook
-```
-Open hotel.ipynb and run cells sequentially.
-
-
-## Limitations & Future Work
-
-- Results are based on a single dataset; performance may vary by hotel, region, or customer mix
-- Expand evaluation beyond accuracy (e.g., ROC-AUC, precision/recall tradeoffs, calibration)
-- Explore cost-sensitive learning (false positives vs false negatives have different business impact)
-- Apply approach across multiple datasets for generalization
-
-## References
-- scikit-learn documentation
-- imbalanced-learn (SMOTE)
-- statsmodels documentation
-- Kaggle dataset: Hotel Reservations Dataset (Classification)
-
+- `img/` — exported plots / screenshot tables used in this README
+- `data/` - hotel.csv dataset
