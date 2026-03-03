@@ -103,7 +103,7 @@ Below are the `classification_report` results for the Voting Classifier trained 
 ![Voting Classifier - All Features](img/voting_all_feat.png)
 
 ### PCA Features (22)
-![Voting Classifier - PCA](img/voting_pca.png)
+![Voting Classifier - PCA](img/voting_pca_feat.png)
 
 ### Backward Elimination (19)
 ![Voting Classifier - Backward Elimination](img/voting_backward.png)
@@ -126,3 +126,4 @@ This supported our hypothesis that lead time and pricing are meaningful indicato
 - `backward_elimination.py` — backward feature elimination helper (statsmodels)
 - `img/` — exported plots / screenshot tables used in this README
 - `data/` - hotel.csv dataset
+
